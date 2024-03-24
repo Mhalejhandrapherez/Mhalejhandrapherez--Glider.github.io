@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE GLIDER</title>
+    <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+
+<div class="Lista roundBorder"> 
+    <div class="date">
+    <div class="dateRight">
+        <div id="dateNumber"></div>
+        <div>
+            <div id="dateMonth"></div>
+            <div id="dateYear"></div>
+           </div>
+        </div>
+        <div id="dateText"></div>
+    </div>
+    <form onsubmit="addNewTask(event)"  >
+        <input type="text" name="taskText" autocomplete="off" placeholder="New Homework" class="roundBorder">
+        <button type="submit" class="addTaskButton">+</button>
+        <button type="button" class="orderButton roundBorder" onclick="removeAllTasks()">Remove Homework</button>
+
+    </form> 
+    
+    <div id="tasksContainer"></div>
+    </div>
+</body>
+</html>
